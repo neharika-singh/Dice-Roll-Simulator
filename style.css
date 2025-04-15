@@ -1,0 +1,55 @@
+/* body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+} */
+/* above is not working beacuse when u use flex, children comes horizonaly, not vertically , use flex-direction */
+body {
+    display: flex;
+    flex-direction: column;       /* 🔑 This stacks children vertically */
+    align-items: center;          /* horizontally center the items */
+    justify-content: flex-start;  /* align to the top */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.myButton{
+    margin-top: 30px;
+}
+
+.myButton button{
+    background-color: blueviolet;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 0cqmax;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.myButton button:hover{
+    background-color:rgb(184, 27, 111) ;
+    transform: scale(1.05);
+}
+
+.roll-item {
+    width: 300px;
+    margin: 5px 0;
+    font-weight: bold;
+    display: flex;  
+    /* When you apply display: flex to a <li>, 
+    it automatically removes the bullet point in most browsers — 
+    because the bullet (dot) is part of the default list styling, and flex layout overrides how that’s rendered.
+    list-style: none;  This removes the bullet 
+    list-style: disc;       explicitly bring back the dot 
+    list-style-position: inside; optional: places dot inside content box */
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    /* gap: 300px; */
+  }
+  
