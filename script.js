@@ -14,7 +14,7 @@ const onRoll = () => {
     rollCount++;
     const li = document.createElement('li');
     li.classList.add('roll-item');
-    li.innerHTML = `Roll ${rollCount}  <img src="${list[i]}" alt="Dice ${i + 1}" />`;
+    li.innerHTML =  `<span> Roll ${rollCount} </span> <img src="${list[i]}" alt="Dice ${i + 1}" />`;
     rollList.appendChild(li);
 };
 
